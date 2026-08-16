@@ -28,8 +28,8 @@ public class ContaInvestimento extends Conta implements Rendimentavel {
     }
 
     @Override
-    public void apicarRendimento() {
-        saldo += rentabilidadeAnual;
+    public void aplicarRendimento() {
+        saldo = saldo + rentabilidadeAnual;
         System.out.println("Depois de um ano, seu saldo será de R$" + saldo);
     }
 }

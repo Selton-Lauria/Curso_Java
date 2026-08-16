@@ -28,7 +28,7 @@ public class ContaPoupança extends Conta implements Rendimentavel {
     }
 
     @Override
-    public void apicarRendimento() {
+    public void aplicarRendimento() {
         saldo += taxaRendimento / 100;
         System.out.println("Amanhã, seu saldo será de R$" + saldo);
     }
